@@ -5,21 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="FORMA Restaurant & Bistro — сезонные продукты, авторская кухня и уютная атмосфера в Бельцах.">
+  <meta name="theme-color" content="#171a16">
   <title>FORMA — Restaurant & Bistro</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <header class="site-header">
-    <a class="logo" href="#home" aria-label="FORMA — на главную">
+    <a class="logo" href="#home" aria-label="FORMA — главная">
       <span>FORMA<span class="logo-dot">.</span></span>
       <small>RESTAURANT &amp; BISTRO</small>
     </a>
 
-    <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню">☰</button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
 
     <nav class="navigation" id="navigation">
       <a href="#about" data-i18n="navAbout">О ресторане</a>
@@ -31,245 +34,244 @@
 
     <div class="header-actions">
       <div class="languages" aria-label="Выбор языка">
-        <button class="lang-btn active" data-lang="ru">RU</button>
-        <button class="lang-btn" data-lang="ro">RO</button>
-        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn active" type="button" data-lang="ru">RU</button>
+        <button class="lang-btn" type="button" data-lang="ro">RO</button>
+        <button class="lang-btn" type="button" data-lang="en">EN</button>
       </div>
-      <a class="button button-dark header-booking" href="#reservation" data-i18n="bookTable">
-        Забронировать столик <span>↗</span>
-      </a>
+      <a class="header-booking" href="#reservation" data-i18n="bookTable">Забронировать столик</a>
     </div>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow" data-i18n="heroEyebrow">РЕСТОРАН И БИСТРО · БЕЛЬЦЫ</p>
-        <h1 data-i18n="heroTitle">Вкус, который <em>объединяет.</em></h1>
-        <p class="hero-description" data-i18n="heroDescription">
-          Сезонные ингредиенты, авторская кухня и уютная атмосфера для особенных моментов за одним столом.
+      <div class="hero-image" role="img" aria-label="Уютный ресторан с вечерним освещением"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="heroEyebrow">РЕСТОРАН • БЕЛЬЦЫ</p>
+        <h1 data-i18n="heroTitle">Вкус, который<br>создаёт атмосферу.</h1>
+        <p class="hero-description" data-i18n="heroText">
+          Сезонные продукты, авторская кухня и моменты, которыми хочется делиться.
         </p>
-        <div class="hero-actions">
-          <a class="button button-dark" href="#reservation" data-i18n="heroBook">
-            Забронировать столик <span>→</span>
-          </a>
-          <a class="text-link" href="#about" data-i18n="heroDiscover">Открыть нашу историю ↘</a>
+        <div class="hero-buttons">
+          <a class="button button-light" href="#menu" data-i18n="exploreMenu">Открыть меню</a>
+          <a class="button button-outline" href="#about" data-i18n="discoverUs">Открыть для себя FORMA</a>
         </div>
         <div class="hero-note">
-          <span class="note-line"></span>
-          <span data-i18n="heroNote">БОЛЬШЕ, ЧЕМ ПРОСТО ЕДА</span>
+          <span class="hero-line"></span>
+          <span data-i18n="heroNote">Хорошая еда. Искренние встречи.</span>
         </div>
       </div>
 
-      <div class="hero-image image-frame">
-        <img
-          src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1500&q=85"
-          alt="Свежая паста с томатами и зеленью"
-          fetchpriority="high">
-        <div class="image-caption">
-          <span data-i18n="heroPhotoCaption">ВКУС В КАЖДОЙ ДЕТАЛИ</span>
-          <span>01 / 03</span>
+      <div class="hero-side-label">FORMA · EST. 2026</div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="section-kicker" data-i18n="aboutKicker">НАША ФИЛОСОФИЯ</div>
+      <div class="intro-grid">
+        <div>
+          <h2 data-i18n="aboutTitle">Простота — это<br><em>особый вид искусства.</em></h2>
         </div>
+        <div class="intro-copy">
+          <p data-i18n="aboutText">
+            FORMA — место, где знакомые вкусы обретают новое звучание.
+            Мы вдохновляемся сезонными продуктами, вниманием к деталям
+            и удовольствием от неспешных встреч за одним столом.
+          </p>
+          <a class="text-link" href="#menu">
+            <span data-i18n="aboutLink">Познакомиться с нашим меню</span> <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="features">
+        <article class="feature">
+          <span class="feature-number">01</span>
+          <h3 data-i18n="feature1Title">Сезонность</h3>
+          <p data-i18n="feature1Text">Свежие ингредиенты и уважение к естественному вкусу продуктов.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-number">02</span>
+          <h3 data-i18n="feature2Title">Авторская кухня</h3>
+          <p data-i18n="feature2Text">Любимые сочетания, современная подача и внимание к каждой детали.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-number">03</span>
+          <h3 data-i18n="feature3Title">Тёплая атмосфера</h3>
+          <p data-i18n="feature3Text">Пространство для встреч, разговоров и маленьких праздников.</p>
+        </article>
       </div>
     </section>
 
-    <section class="intro section-wrap" id="about">
-      <div class="intro-image image-frame">
-        <img
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85"
-          alt="Уютный ресторан с сервированными столами"
-          loading="lazy">
-        <span class="image-stamp">FORMA · BĂLȚI</span>
-      </div>
-
-      <div class="intro-content">
-        <p class="eyebrow" data-i18n="aboutEyebrow">НАША ФИЛОСОФИЯ</p>
-        <h2 data-i18n="aboutTitle">Простые ингредиенты.<br><em>Настоящие впечатления.</em></h2>
-        <p data-i18n="aboutText">
-          В FORMA мы верим, что лучшие моменты происходят за столом. Мы объединяем свежие сезонные продукты, знакомые вкусы и современный подход к приготовлению.
-        </p>
-
-        <div class="values">
-          <article class="value">
-            <span class="value-icon">✳</span>
-            <div>
-              <h3 data-i18n="value1Title">Сезонные продукты</h3>
-              <p data-i18n="value1Text">Свежие и качественные ингредиенты.</p>
-            </div>
-          </article>
-          <article class="value">
-            <span class="value-icon">♧</span>
-            <div>
-              <h3 data-i18n="value2Title">Авторская кухня</h3>
-              <p data-i18n="value2Text">Гармония вкусов и внимание к деталям.</p>
-            </div>
-          </article>
-          <article class="value">
-            <span class="value-icon">♡</span>
-            <div>
-              <h3 data-i18n="value3Title">Тёплая атмосфера</h3>
-              <p data-i18n="value3Text">Хорошая еда в кругу близких людей.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="menu-section section-wrap" id="menu">
+    <section class="menu-section section" id="menu">
       <div class="section-heading">
         <div>
-          <p class="eyebrow" data-i18n="menuEyebrow">ВЫБОР ШЕФ-ПОВАРА</p>
-          <h2 data-i18n="menuTitle">Блюда, которые <em>вдохновляют.</em></h2>
+          <div class="section-kicker" data-i18n="menuKicker">ВЫБОР ШЕФА</div>
+          <h2 data-i18n="menuTitle">Вкусные <em>моменты.</em></h2>
         </div>
-        <p class="heading-note" data-i18n="menuSubtitle">
-          Знакомые продукты, новые сочетания и вкус, к которому хочется возвращаться.
-        </p>
+        <p data-i18n="menuIntro">Небольшая подборка блюд, созданных для удовольствия.</p>
       </div>
 
       <div class="menu-grid">
         <article class="dish-card">
-          <div class="dish-image image-frame">
-            <img
-              src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=85"
-              alt="Паста с сыром и сливочным соусом"
-              loading="lazy">
-            <span class="dish-number">01</span>
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Свежий салат с овощами" loading="lazy">
+            <span class="dish-tag" data-i18n="tagFresh">СВЕЖЕЕ</span>
           </div>
           <div class="dish-info">
-            <div class="dish-title-row">
-              <h3 data-i18n="dish1Title">Паста с трюфельным кремом</h3>
-              <span class="price">165 MDL</span>
+            <div>
+              <h3 data-i18n="dish1Title">Салат с сезонными овощами</h3>
+              <p data-i18n="dish1Text">Свежая зелень, овощи и лёгкая авторская заправка.</p>
             </div>
-            <p data-i18n="dish1Text">Свежая паста, нежный крем, пармезан и ароматная зелень.</p>
-            <span class="dish-category" data-i18n="dish1Category">ПАСТА · ВЕГЕТАРИАНСКОЕ</span>
+            <span class="dish-price">145 MDL</span>
           </div>
         </article>
 
         <article class="dish-card">
-          <div class="dish-image image-frame">
-            <img
-              src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=85"
-              alt="Рыба с овощами и лимоном"
-              loading="lazy">
-            <span class="dish-number">02</span>
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=85" alt="Паста с зеленью и сыром" loading="lazy">
+            <span class="dish-tag" data-i18n="tagPopular">ПОПУЛЯРНОЕ</span>
           </div>
           <div class="dish-info">
-            <div class="dish-title-row">
-              <h3 data-i18n="dish2Title">Лосось на гриле</h3>
-              <span class="price">245 MDL</span>
+            <div>
+              <h3 data-i18n="dish2Title">Паста с травами и сыром</h3>
+              <p data-i18n="dish2Text">Нежная паста, ароматные травы и тёртый сыр.</p>
             </div>
-            <p data-i18n="dish2Text">Сезонные овощи, лимонный соус и пряные травы.</p>
-            <span class="dish-category" data-i18n="dish2Category">РЫБА · ФИРМЕННОЕ БЛЮДО</span>
+            <span class="dish-price">185 MDL</span>
           </div>
         </article>
 
         <article class="dish-card">
-          <div class="dish-image image-frame">
-            <img
-              src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&w=900&q=85"
-              alt="Салат с томатами и сыром"
-              loading="lazy">
-            <span class="dish-number">03</span>
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=85" alt="Блюдо высокой кухни" loading="lazy">
+            <span class="dish-tag" data-i18n="tagChef">ОТ ШЕФА</span>
           </div>
           <div class="dish-info">
-            <div class="dish-title-row">
-              <h3 data-i18n="dish3Title">Салат с бурратой</h3>
-              <span class="price">145 MDL</span>
+            <div>
+              <h3 data-i18n="dish3Title">Фирменное блюдо FORMA</h3>
+              <p data-i18n="dish3Text">Сбалансированный вкус и красивая подача.</p>
             </div>
-            <p data-i18n="dish3Text">Томаты черри, свежий базилик и оливковое масло.</p>
-            <span class="dish-category" data-i18n="dish3Category">САЛАТЫ · ЛЁГКОЕ</span>
+            <span class="dish-price">235 MDL</span>
           </div>
         </article>
       </div>
-      <p class="price-note" data-i18n="priceNote">Пример меню для учебного проекта. Цены и состав блюд можно изменить.</p>
+      <p class="menu-disclaimer" data-i18n="menuDisclaimer">* Примерное меню для учебного проекта. Состав и цены условные.</p>
     </section>
 
-    <section class="gallery-section section-wrap" id="gallery">
+    <section class="quote-section">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=85" alt="Интерьер ресторана" loading="lazy">
+      <div class="quote-overlay"></div>
+      <div class="quote-content">
+        <span class="quote-mark">“</span>
+        <h2 data-i18n="quoteTitle">Самые тёплые воспоминания<br>начинаются за столом.</h2>
+        <p>FORMA — RESTAURANT &amp; BISTRO</p>
+      </div>
+    </section>
+
+    <section class="gallery-section section" id="gallery">
       <div class="section-heading">
         <div>
-          <p class="eyebrow" data-i18n="galleryEyebrow">АТМОСФЕРА FORMA</p>
-          <h2 data-i18n="galleryTitle">Моменты, <em>которые остаются.</em></h2>
+          <div class="section-kicker" data-i18n="galleryKicker">АТМОСФЕРА FORMA</div>
+          <h2 data-i18n="galleryTitle">Красота в <em>деталях.</em></h2>
         </div>
-        <p class="heading-note" data-i18n="gallerySubtitle">Красивые детали, вкусная еда и вечера в хорошей компании.</p>
+        <p data-i18n="galleryIntro">Блюда, пространство и настроение, которое хочется сохранить.</p>
       </div>
 
       <div class="gallery-grid">
-        <div class="gallery-item gallery-large image-frame">
-          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85" alt="Сервировка столов в ресторане" loading="lazy">
-        </div>
-        <div class="gallery-item image-frame">
-          <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=85" alt="Свежие овощи и ингредиенты" loading="lazy">
-        </div>
-        <div class="gallery-item image-frame">
-          <img src="https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?auto=format&fit=crop&w=900&q=85" alt="Блюдо современной кухни" loading="lazy">
-        </div>
+        <img class="gallery-tall" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=85" alt="Столики в ресторане" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=85" alt="Красиво сервированная еда" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?auto=format&fit=crop&w=900&q=85" alt="Аппетитное блюдо" loading="lazy">
       </div>
     </section>
 
-    <section class="reservation-section" id="reservation">
+    <section class="reservation-section section" id="reservation">
       <div class="reservation-copy">
-        <p class="eyebrow" data-i18n="bookingEyebrow">ВАШ ВЕЧЕР НАЧИНАЕТСЯ ЗДЕСЬ</p>
-        <h2 data-i18n="bookingTitle">Давайте сохраним <em>для вас столик.</em></h2>
-        <p data-i18n="bookingText">Заполните форму, чтобы оставить заявку на бронирование. Мы будем рады видеть вас в FORMA.</p>
+        <div class="section-kicker" data-i18n="bookingKicker">ВАШ СЛЕДУЮЩИЙ ВИЗИТ</div>
+        <h2 data-i18n="bookingTitle">Ваш столик<br><em>уже ждёт.</em></h2>
+        <p data-i18n="bookingText">Планируете ужин вдвоём, встречу с друзьями или особенный вечер? Заполните форму, чтобы попробовать процесс бронирования.</p>
         <div class="reservation-detail">
           <span>✳</span>
-          <p data-i18n="bookingNote">Пожалуйста, укажите удобные дату и время посещения.</p>
+          <p data-i18n="bookingNote">Демонстрационная форма учебного проекта. Заявка не отправляется в настоящий ресторан.</p>
         </div>
       </div>
 
       <form class="reservation-form" id="reservation-form">
-        <label for="guest-name" data-i18n="labelName">Ваше имя</label>
-        <input id="guest-name" name="name" type="text" autocomplete="name" required placeholder="Например, Ирина" data-i18n-placeholder="placeholderName">
-
-        <label for="guest-phone" data-i18n="labelPhone">Телефон для связи</label>
-        <input id="guest-phone" name="phone" type="tel" autocomplete="tel" required placeholder="+373 ..." data-i18n-placeholder="placeholderPhone">
-
         <div class="form-row">
-          <div>
-            <label for="guest-date" data-i18n="labelDate">Дата</label>
-            <input id="guest-date" name="date" type="date" required>
-          </div>
-          <div>
-            <label for="guest-guests" data-i18n="labelGuests">Количество гостей</label>
-            <select id="guest-guests" name="guests" required>
-              <option value="1">1</option>
-              <option value="2" selected>2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7+">7+</option>
-            </select>
-          </div>
+          <label>
+            <span data-i18n="formName">Ваше имя</span>
+            <input type="text" name="name" required placeholder="Имя" data-i18n-placeholder="namePlaceholder">
+          </label>
+          <label>
+            <span data-i18n="formPhone">Телефон</span>
+            <input type="tel" name="phone" required placeholder="+373..." data-i18n-placeholder="phonePlaceholder">
+          </label>
         </div>
-
-        <label for="guest-message" data-i18n="labelMessage">Пожелания (необязательно)</label>
-        <textarea id="guest-message" name="message" rows="3" placeholder="Особые пожелания..." data-i18n-placeholder="placeholderMessage"></textarea>
-
-        <button class="button button-dark submit-button" type="submit" data-i18n="submitBooking">Отправить заявку <span>→</span></button>
-        <p class="form-note" id="form-status" role="status" data-i18n="formNote">Учебный макет: заявка пока не отправляется в ресторан.</p>
+        <div class="form-row">
+          <label>
+            <span data-i18n="formDate">Дата</span>
+            <input type="date" name="date" required>
+          </label>
+          <label>
+            <span data-i18n="formTime">Время</span>
+            <select name="time" required>
+              <option value="" data-i18n="timePlaceholder">Выберите время</option>
+              <option>12:00</option>
+              <option>13:00</option>
+              <option>14:00</option>
+              <option>15:00</option>
+              <option>16:00</option>
+              <option>17:00</option>
+              <option>18:00</option>
+              <option>19:00</option>
+              <option>20:00</option>
+              <option>21:00</option>
+            </select>
+          </label>
+        </div>
+        <label>
+          <span data-i18n="formGuests">Количество гостей</span>
+          <select name="guests" required>
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6+</option>
+          </select>
+        </label>
+        <label>
+          <span data-i18n="formMessage">Пожелания (необязательно)</span>
+          <textarea name="message" rows="3" placeholder="Напишите ваши пожелания..." data-i18n-placeholder="messagePlaceholder"></textarea>
+        </label>
+        <button class="button button-dark submit-button" type="submit" data-i18n="formSubmit">Попробовать бронирование <span>↗</span></button>
+        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
       </form>
     </section>
 
-    <section class="contact-section section-wrap" id="contacts">
-      <div>
-        <p class="eyebrow" data-i18n="contactEyebrow">БУДЕМ РАДЫ ВАС ВИДЕТЬ</p>
-        <h2 data-i18n="contactTitle">Встретимся <em>за столом.</em></h2>
+    <section class="contact-section section" id="contacts">
+      <div class="contact-heading">
+        <div class="section-kicker" data-i18n="contactsKicker">БУДЕМ РАДЫ ВАС ВИДЕТЬ</div>
+        <h2 data-i18n="contactsTitle">До встречи в <em>FORMA.</em></h2>
       </div>
       <div class="contact-grid">
-        <div>
-          <span class="contact-label" data-i18n="addressLabel">АДРЕС</span>
-          <p data-i18n="addressText">Бельцы, Республика Молдова<br>Точный адрес будет добавлен позже</p>
+        <div class="contact-item">
+          <span data-i18n="contactAddressLabel">АДРЕС</span>
+          <p data-i18n="contactAddress">Бельцы, Республика Молдова</p>
         </div>
-        <div>
-          <span class="contact-label" data-i18n="hoursLabel">ЧАСЫ РАБОТЫ</span>
-          <p data-i18n="hoursText">Понедельник – воскресенье<br>12:00 – 22:00 (пример)</p>
+        <div class="contact-item">
+          <span data-i18n="contactHoursLabel">ЧАСЫ РАБОТЫ</span>
+          <p data-i18n="contactHours">Ежедневно · 12:00–22:00</p>
         </div>
-        <div>
-          <span class="contact-label" data-i18n="contactLabel">КОНТАКТЫ</span>
-          <p data-i18n="contactText">Телефон и электронная почта<br>будут добавлены позже</p>
+        <div class="contact-item">
+          <span data-i18n="contactPhoneLabel">ТЕЛЕФОН</span>
+          <p data-i18n="contactPhone">Будет добавлен</p>
+        </div>
+        <div class="contact-item">
+          <span data-i18n="contactEmailLabel">ПОЧТА</span>
+          <p data-i18n="contactEmail">Будет добавлена</p>
         </div>
       </div>
+      <p class="contact-disclaimer" data-i18n="contactDisclaimer">Учебный концепт ресторана. Контактные данные и адрес пока не являются реальными.</p>
     </section>
   </main>
 
@@ -278,9 +280,9 @@
       <span>FORMA<span class="logo-dot">.</span></span>
       <small>RESTAURANT &amp; BISTRO</small>
     </a>
-    <p data-i18n="footerText">Вкус, который объединяет.</p>
-    <a href="#home" class="back-top" data-i18n="backTop">Наверх ↑</a>
-    <span class="copyright">© 2026 FORMA · <span data-i18n="footerRights">Учебный проект</span></span>
+    <p data-i18n="footerText">Создано с вниманием к деталям и любовью к хорошей еде.</p>
+    <a href="#home" class="back-top" aria-label="Наверх">↑</a>
+    <span class="copyright">© 2026 FORMA</span>
   </footer>
 </body>
 </html>
