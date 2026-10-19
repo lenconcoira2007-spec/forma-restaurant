@@ -4,6 +4,14 @@
 
 FORMA is a minimalistic website concept for a modern restaurant. The website will present the restaurant, display its menu, show photos of the interior and dishes, and provide contact information.
 
+## Client Information
+
+The client is a fictional owner of the FORMA Restaurant & Bistro, created for educational purposes.
+
+The client needs a website to present the restaurant online, introduce visitors to the menu and atmosphere, display opening hours and contact information, and allow visitors to submit a table reservation request.
+
+The website is a student project. It does not process real reservations, store booking data in a database, or accept online payments.
+
 ## 2. Project Objectives
 
 - Create a simple and attractive restaurant website.
