@@ -1,182 +1,340 @@
 
 const translations = {
   ru: {
-    navStory: "О ресторане",
+    navAbout: "О ресторане",
     navMenu: "Меню",
     navGallery: "Галерея",
-    navContact: "Контакты",
-    book: "Забронировать",
-    eyebrow: "РЕСТОРАН И БИСТРО",
-    heroTitle: "Вкусная еда. Красивые моменты.",
-    heroText: "Место, где сезонные продукты, авторская кухня и уютная атмосфера объединяются за одним столом.",
-    explore: "Посмотреть меню",
-    reserve: "Забронировать столик",
-    welcome: "ДОБРО ПОЖАЛОВАТЬ В FORMA",
-    storyTitle: "Простые ингредиенты. Незабываемые впечатления.",
-    storyText: "Мы верим, что лучшие моменты происходят за столом. Наша кухня объединяет сезонные продукты, знакомые вкусы и современный подход к приготовлению.",
-    menuTitle: "Вкус FORMA",
-    menuText: "Попробуйте наши любимые блюда, приготовленные с заботой.",
-    galleryTitle: "Атмосфера FORMA",
-    reserveTitle: "Ваш столик ждёт",
-    reserveText: "Планируете ужин, свидание или встречу с друзьями? Оставьте заявку на бронирование.",
-    name: "Ваше имя",
-    email: "Электронная почта",
-    phone: "Номер телефона",
-    date: "Дата",
-    guests: "Количество гостей",
-    chooseGuests: "Выберите количество",
-    request: "Пожелания",
-    requestPlaceholder: "Расскажите, что нам нужно знать",
-    send: "Отправить заявку",
-    hours: "Часы работы",
-    everyDay: "Ежедневно",
-    address: "Бельцы, Молдова",
-    footerNote: "Учебный проект. Адрес и контакты будут уточнены.",
-    pasta: "Паста с трюфелем",
-    salmon: "Лосось на гриле",
-    salad: "Салат буррата",
-    steak: "Стейк из говядины",
-    pastaDesc: "Свежая паста, трюфельный крем и пармезан.",
-    salmonDesc: "Лосось, сезонные овощи и лимонный соус.",
-    saladDesc: "Буррата, томаты черри, базилик и оливковое масло.",
-    steakDesc: "Сочный стейк с овощами и фирменным соусом.",
-    formNote: "Демонстрационная форма: онлайн-бронирование пока не подключено."
+    navBooking: "Бронирование",
+    navContacts: "Контакты",
+    bookTable: "Забронировать столик",
+    heroEyebrow: "РЕСТОРАН • БЕЛЬЦЫ",
+    heroTitle: "Вкус, который<br>создаёт атмосферу.",
+    heroText: "Сезонные продукты, авторская кухня и моменты, которыми хочется делиться.",
+    exploreMenu: "Открыть меню",
+    discoverUs: "Открыть для себя FORMA",
+    heroNote: "Хорошая еда. Искренние встречи.",
+    aboutKicker: "НАША ФИЛОСОФИЯ",
+    aboutTitle: "Простота — это<br><em>особый вид искусства.</em>",
+    aboutText: "FORMA — место, где знакомые вкусы обретают новое звучание. Мы вдохновляемся сезонными продуктами, вниманием к деталям и удовольствием от неспешных встреч за одним столом.",
+    aboutLink: "Познакомиться с нашим меню",
+    feature1Title: "Сезонность",
+    feature1Text: "Свежие ингредиенты и уважение к естественному вкусу продуктов.",
+    feature2Title: "Авторская кухня",
+    feature2Text: "Любимые сочетания, современная подача и внимание к каждой детали.",
+    feature3Title: "Тёплая атмосфера",
+    feature3Text: "Пространство для встреч, разговоров и маленьких праздников.",
+    menuKicker: "ВЫБОР ШЕФА",
+    menuTitle: "Вкусные <em>моменты.</em>",
+    menuIntro: "Небольшая подборка блюд, созданных для удовольствия.",
+    tagFresh: "СВЕЖЕЕ",
+    tagPopular: "ПОПУЛЯРНОЕ",
+    tagChef: "ОТ ШЕФА",
+    dish1Title: "Салат с сезонными овощами",
+    dish1Text: "Свежая зелень, овощи и лёгкая авторская заправка.",
+    dish2Title: "Паста с травами и сыром",
+    dish2Text: "Нежная паста, ароматные травы и тёртый сыр.",
+    dish3Title: "Фирменное блюдо FORMA",
+    dish3Text: "Сбалансированный вкус и красивая подача.",
+    menuDisclaimer: "* Примерное меню для учебного проекта. Состав и цены условные.",
+    quoteTitle: "Самые тёплые воспоминания<br>начинаются за столом.",
+    galleryKicker: "АТМОСФЕРА FORMA",
+    galleryTitle: "Красота в <em>деталях.</em>",
+    galleryIntro: "Блюда, пространство и настроение, которое хочется сохранить.",
+    bookingKicker: "ВАШ СЛЕДУЮЩИЙ ВИЗИТ",
+    bookingTitle: "Ваш столик<br><em>уже ждёт.</em>",
+    bookingText: "Планируете ужин вдвоём, встречу с друзьями или особенный вечер? Заполните форму, чтобы попробовать процесс бронирования.",
+    bookingNote: "Демонстрационная форма учебного проекта. Заявка не отправляется в настоящий ресторан.",
+    formName: "Ваше имя",
+    formPhone: "Телефон",
+    formDate: "Дата",
+    formTime: "Время",
+    formGuests: "Количество гостей",
+    formMessage: "Пожелания (необязательно)",
+    formSubmit: "Попробовать бронирование",
+    namePlaceholder: "Имя",
+    phonePlaceholder: "+373...",
+    timePlaceholder: "Выберите время",
+    messagePlaceholder: "Напишите ваши пожелания...",
+    contactsKicker: "БУДЕМ РАДЫ ВАС ВИДЕТЬ",
+    contactsTitle: "До встречи в <em>FORMA.</em>",
+    contactAddressLabel: "АДРЕС",
+    contactAddress: "Бельцы, Республика Молдова",
+    contactHoursLabel: "ЧАСЫ РАБОТЫ",
+    contactHours: "Ежедневно · 12:00–22:00",
+    contactPhoneLabel: "ТЕЛЕФОН",
+    contactPhone: "Будет добавлен",
+    contactEmailLabel: "ПОЧТА",
+    contactEmail: "Будет добавлена",
+    contactDisclaimer: "Учебный концепт ресторана. Контактные данные и адрес пока не являются реальными.",
+    footerText: "Создано с вниманием к деталям и любовью к хорошей еде.",
+    formSuccess: "Спасибо, {name}! Это демонстрация: заявка не отправлена в настоящий ресторан.",
+    formError: "Пожалуйста, проверьте заполнение всех обязательных полей."
   },
 
   ro: {
-    navStory: "Despre noi",
+    navAbout: "Despre noi",
     navMenu: "Meniu",
     navGallery: "Galerie",
-    navContact: "Contacte",
-    book: "Rezervă o masă",
-    eyebrow: "RESTAURANT ȘI BISTRO",
-    heroTitle: "Mâncare bună. Momente frumoase.",
-    heroText: "Un loc unde ingredientele de sezon, bucătăria creativă și atmosfera primitoare se întâlnesc la aceeași masă.",
-    explore: "Descoperă meniul",
-    reserve: "Rezervă o masă",
-    welcome: "BINE AȚI VENIT LA FORMA",
-    storyTitle: "Ingrediente simple. Experiențe deosebite.",
-    storyText: "Credem că cele mai frumoase momente se petrec la masă. Bucătăria noastră combină ingredientele de sezon, gusturile familiare și o abordare modernă.",
-    menuTitle: "Gustul FORMA",
-    menuText: "Descoperiți preparatele noastre preferate, pregătite cu grijă.",
-    galleryTitle: "Atmosfera FORMA",
-    reserveTitle: "Masa dumneavoastră vă așteaptă",
-    reserveText: "Planificați o cină, o întâlnire sau o seară cu prietenii? Trimiteți o cerere de rezervare.",
-    name: "Numele dumneavoastră",
-    email: "Adresa de e-mail",
-    phone: "Număr de telefon",
-    date: "Data",
-    guests: "Numărul de persoane",
-    chooseGuests: "Alegeți numărul",
-    request: "Preferințe",
-    requestPlaceholder: "Spuneți-ne ce ar trebui să știm",
-    send: "Trimite cererea",
-    hours: "Program",
-    everyDay: "În fiecare zi",
-    address: "Bălți, Moldova",
-    footerNote: "Proiect educațional. Adresa și contactele vor fi confirmate.",
-    pasta: "Paste cu trufe",
-    salmon: "Somon la grătar",
-    salad: "Salată cu burrata",
-    steak: "Friptură de vită",
-    pastaDesc: "Paste proaspete, cremă de trufe și parmezan.",
-    salmonDesc: "Somon, legume de sezon și sos de lămâie.",
-    saladDesc: "Burrata, roșii cherry, busuioc și ulei de măsline.",
-    steakDesc: "Friptură suculentă cu legume și sosul casei.",
-    formNote: "Formular demonstrativ: rezervările online nu sunt încă activate."
+    navBooking: "Rezervare",
+    navContacts: "Contacte",
+    bookTable: "Rezervă o masă",
+    heroEyebrow: "RESTAURANT • BĂLȚI",
+    heroTitle: "Gustul care<br>creează atmosferă.",
+    heroText: "Ingrediente de sezon, bucătărie creativă și momente de împărtășit.",
+    exploreMenu: "Descoperă meniul",
+    discoverUs: "Descoperă FORMA",
+    heroNote: "Mâncare bună. Întâlniri sincere.",
+    aboutKicker: "FILOZOFIA NOASTRĂ",
+    aboutTitle: "Simplitatea este<br><em>o formă de artă.</em>",
+    aboutText: "FORMA este locul unde gusturile familiare capătă o nouă expresie. Ne inspirăm din ingredientele de sezon, atenția la detalii și bucuria întâlnirilor relaxate în jurul aceleiași mese.",
+    aboutLink: "Descoperă meniul nostru",
+    feature1Title: "Sezonalitate",
+    feature1Text: "Ingrediente proaspete și respect pentru gustul natural al produselor.",
+    feature2Title: "Bucătărie creativă",
+    feature2Text: "Combinații îndrăgite, prezentare modernă și atenție la fiecare detaliu.",
+    feature3Title: "Atmosferă caldă",
+    feature3Text: "Un spațiu pentru întâlniri, conversații și mici sărbători.",
+    menuKicker: "ALEGEA BUCĂTARULUI",
+    menuTitle: "Momente <em>delicioase.</em>",
+    menuIntro: "O selecție de preparate create pentru plăcerea gustului.",
+    tagFresh: "PROASPĂT",
+    tagPopular: "POPULAR",
+    tagChef: "DE LA BUCĂTAR",
+    dish1Title: "Salată cu legume de sezon",
+    dish1Text: "Verdețuri proaspete, legume și un dressing special.",
+    dish2Title: "Paste cu ierburi și brânză",
+    dish2Text: "Paste delicate, ierburi aromate și brânză rasă.",
+    dish3Title: "Preparatul casei FORMA",
+    dish3Text: "Gust echilibrat și o prezentare elegantă.",
+    menuDisclaimer: "* Meniu demonstrativ pentru proiectul de studii. Ingredientele și prețurile sunt orientative.",
+    quoteTitle: "Cele mai frumoase amintiri<br>încep la masă.",
+    galleryKicker: "ATMOSFERA FORMA",
+    galleryTitle: "Frumusețea stă în <em>detalii.</em>",
+    galleryIntro: "Preparate, spațiu și o atmosferă pe care vrei să o păstrezi.",
+    bookingKicker: "URMĂTOAREA TA VIZITĂ",
+    bookingTitle: "Masa ta<br><em>te așteaptă.</em>",
+    bookingText: "Planifici o cină în doi, o întâlnire cu prietenii sau o seară specială? Completează formularul pentru a încerca procesul de rezervare.",
+    bookingNote: "Formular demonstrativ pentru proiectul de studii. Cererea nu este trimisă unui restaurant real.",
+    formName: "Numele tău",
+    formPhone: "Telefon",
+    formDate: "Data",
+    formTime: "Ora",
+    formGuests: "Numărul de persoane",
+    formMessage: "Preferințe (opțional)",
+    formSubmit: "Încearcă rezervarea",
+    namePlaceholder: "Nume",
+    phonePlaceholder: "+373...",
+    timePlaceholder: "Alege ora",
+    messagePlaceholder: "Scrie preferințele tale...",
+    contactsKicker: "NE BUCURĂM SĂ TE VEDEM",
+    contactsTitle: "Ne vedem la <em>FORMA.</em>",
+    contactAddressLabel: "ADRESĂ",
+    contactAddress: "Bălți, Republica Moldova",
+    contactHoursLabel: "PROGRAM",
+    contactHours: "Zilnic · 12:00–22:00",
+    contactPhoneLabel: "TELEFON",
+    contactPhone: "Va fi adăugat",
+    contactEmailLabel: "E-MAIL",
+    contactEmail: "Va fi adăugat",
+    contactDisclaimer: "Concept demonstrativ de restaurant. Datele de contact și adresa nu sunt încă reale.",
+    footerText: "Creat cu atenție la detalii și dragoste pentru mâncarea bună.",
+    formSuccess: "Mulțumim, {name}! Aceasta este o demonstrație: rezervarea nu a fost trimisă unui restaurant real.",
+    formError: "Te rugăm să verifici toate câmpurile obligatorii."
   },
 
   en: {
-    navStory: "Our Story",
+    navAbout: "About",
     navMenu: "Menu",
     navGallery: "Gallery",
-    navContact: "Contact",
-    book: "Book a Table",
-    eyebrow: "RESTAURANT & BISTRO",
-    heroTitle: "Good food. Beautiful moments.",
-    heroText: "A place where seasonal ingredients, creative cooking, and a welcoming atmosphere come together.",
-    explore: "Explore Our Menu",
-    reserve: "Reserve a Table",
-    welcome: "WELCOME TO FORMA",
-    storyTitle: "Simple ingredients. Exceptional experiences.",
-    storyText: "We believe the best moments happen around a table. Our kitchen combines seasonal ingredients, familiar flavours, and a modern approach to cooking.",
-    menuTitle: "A Taste of FORMA",
-    menuText: "Discover our favourite dishes, prepared with care.",
-    galleryTitle: "Life at FORMA",
-    reserveTitle: "Your table is waiting",
-    reserveText: "Planning dinner, a date, or a gathering with friends? Send us a reservation request.",
-    name: "Your name",
-    email: "Email address",
-    phone: "Phone number",
-    date: "Date",
-    guests: "Number of guests",
-    chooseGuests: "Select guests",
-    request: "Special requests",
-    requestPlaceholder: "Tell us anything we should know",
-    send: "Send Reservation Request",
-    hours: "Opening Hours",
-    everyDay: "Every day",
-    address: "Bălți, Moldova",
-    footerNote: "Student project. Address and contact details are to be confirmed.",
-    pasta: "Truffle Pasta",
-    salmon: "Grilled Salmon",
-    salad: "Burrata Salad",
-    steak: "Beef Steak",
-    pastaDesc: "Fresh pasta, truffle cream, and parmesan.",
-    salmonDesc: "Salmon, seasonal vegetables, and lemon sauce.",
-    saladDesc: "Burrata, cherry tomatoes, basil, and olive oil.",
-    steakDesc: "Juicy beef steak with vegetables and house sauce.",
-    formNote: "Demo form: online reservations are not connected yet."
+    navBooking: "Reservations",
+    navContacts: "Contact",
+    bookTable: "Book a table",
+    heroEyebrow: "RESTAURANT • BĂLȚI",
+    heroTitle: "A taste that<br>sets the mood.",
+    heroText: "Seasonal ingredients, creative cuisine, and moments worth sharing.",
+    exploreMenu: "Explore the menu",
+    discoverUs: "Discover FORMA",
+    heroNote: "Good food. Meaningful moments.",
+    aboutKicker: "OUR PHILOSOPHY",
+    aboutTitle: "Simplicity is<br><em>an art of its own.</em>",
+    aboutText: "FORMA is a place where familiar flavours find a new expression. We draw inspiration from seasonal ingredients, attention to detail, and the pleasure of unhurried gatherings around the same table.",
+    aboutLink: "Explore our menu",
+    feature1Title: "Seasonal",
+    feature1Text: "Fresh ingredients and respect for the natural taste of every product.",
+    feature2Title: "Creative cuisine",
+    feature2Text: "Favourite combinations, modern presentation, and attention to every detail.",
+    feature3Title: "A warm atmosphere",
+    feature3Text: "A place for gatherings, conversations, and little celebrations.",
+    menuKicker: "CHEF'S SELECTION",
+    menuTitle: "Delicious <em>moments.</em>",
+    menuIntro: "A small selection of dishes made to be enjoyed.",
+    tagFresh: "FRESH",
+    tagPopular: "POPULAR",
+    tagChef: "CHEF'S PICK",
+    dish1Title: "Seasonal vegetable salad",
+    dish1Text: "Fresh greens, vegetables, and a light signature dressing.",
+    dish2Title: "Herb and cheese pasta",
+    dish2Text: "Tender pasta, aromatic herbs, and grated cheese.",
+    dish3Title: "FORMA signature dish",
+    dish3Text: "Balanced flavours and an elegant presentation.",
+    menuDisclaimer: "* Sample menu for an educational project. Ingredients and prices are illustrative.",
+    quoteTitle: "The warmest memories<br>begin around a table.",
+    galleryKicker: "THE FORMA ATMOSPHERE",
+    galleryTitle: "Beauty is in the <em>details.</em>",
+    galleryIntro: "Food, space, and a mood worth remembering.",
+    bookingKicker: "YOUR NEXT VISIT",
+    bookingTitle: "Your table<br>is <em>waiting.</em>",
+    bookingText: "Planning a dinner for two, a get-together with friends, or a special evening? Fill in the form to try the reservation process.",
+    bookingNote: "This is a demonstration form for an educational project. No request is sent to a real restaurant.",
+    formName: "Your name",
+    formPhone: "Phone",
+    formDate: "Date",
+    formTime: "Time",
+    formGuests: "Number of guests",
+    formMessage: "Special requests (optional)",
+    formSubmit: "Try booking",
+    namePlaceholder: "Name",
+    phonePlaceholder: "+373...",
+    timePlaceholder: "Choose a time",
+    messagePlaceholder: "Write your requests...",
+    contactsKicker: "WE LOOK FORWARD TO SEEING YOU",
+    contactsTitle: "See you at <em>FORMA.</em>",
+    contactAddressLabel: "ADDRESS",
+    contactAddress: "Bălți, Republic of Moldova",
+    contactHoursLabel: "OPENING HOURS",
+    contactHours: "Daily · 12:00–22:00",
+    contactPhoneLabel: "PHONE",
+    contactPhone: "To be added",
+    contactEmailLabel: "EMAIL",
+    contactEmail: "To be added",
+    contactDisclaimer: "Educational restaurant concept. Contact details and address are not real yet.",
+    footerText: "Made with attention to detail and a love of good food.",
+    formSuccess: "Thank you, {name}! This is a demo: your request was not sent to a real restaurant.",
+    formError: "Please check that all required fields are completed."
   }
 };
 
-function setLanguage(lang) {
-  const dictionary = translations[lang];
-  if (!dictionary) return;
+let currentLanguage = "ru";
 
-  document.documentElement.lang = lang;
+function applyLanguage(language) {
+  if (!translations[language]) return;
+
+  currentLanguage = language;
+  document.documentElement.lang = language;
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
-    if (dictionary[key] !== undefined) {
-      element.textContent = dictionary[key];
+    const value = translations[language][key];
+
+    if (typeof value === "string") {
+      element.innerHTML = value;
     }
   });
 
   document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
     const key = element.dataset.i18nPlaceholder;
-    if (dictionary[key] !== undefined) {
-      element.placeholder = dictionary[key];
+    const value = translations[language][key];
+
+    if (typeof value === "string") {
+      element.placeholder = value;
     }
   });
 
-  document.querySelectorAll("[data-lang]").forEach((button) => {
-    const active = button.dataset.lang === lang;
+  document.querySelectorAll(".lang-btn").forEach((button) => {
+    const active = button.dataset.lang === language;
     button.classList.toggle("active", active);
     button.setAttribute("aria-pressed", String(active));
   });
 
-  try {
-    localStorage.setItem("forma-language", lang);
-  } catch (error) {
-    // The site still works if browser storage is unavailable.
+  const menuToggle = document.getElementById("menu-toggle");
+  if (menuToggle) {
+    menuToggle.setAttribute(
+      "aria-label",
+      language === "ru" ? "Открыть меню" :
+      language === "ro" ? "Deschide meniul" : "Open menu"
+    );
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll("[data-lang]").forEach((button) => {
-    button.addEventListener("click", () => {
-      setLanguage(button.dataset.lang);
+document.querySelectorAll(".lang-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    applyLanguage(button.dataset.lang);
+  });
+});
+
+// Mobile navigation
+const menuToggle = document.getElementById("menu-toggle");
+const navigation = document.getElementById("navigation");
+
+if (menuToggle && navigation) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navigation.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+  });
+
+  navigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navigation.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.textContent = "☰";
     });
   });
 
-  let savedLanguage = "ru";
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 900) {
+      navigation.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.textContent = "☰";
+    }
+  });
+}
 
-  try {
-    savedLanguage = localStorage.getItem("forma-language") || "ru";
-  } catch (error) {
-    // Use Russian by default.
-  }
+// Demo reservation form
+const reservationForm = document.getElementById("reservation-form");
+const formMessage = document.getElementById("form-message");
+const dateInput = reservationForm
+  ? reservationForm.querySelector('input[name="date"]')
+  : null;
 
-  setLanguage(savedLanguage);
-});
+if (dateInput) {
+  const today = new Date();
+  const localToday = new Date(
+    today.getTime() - today.getTimezoneOffset() * 60000
+  ).toISOString().split("T")[0];
+
+  dateInput.min = localToday;
+}
+
+if (reservationForm && formMessage) {
+  reservationForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (!reservationForm.reportValidity()) {
+      formMessage.textContent = translations[currentLanguage].formError;
+      return;
+    }
+
+    const name = reservationForm.elements.name.value.trim();
+
+    formMessage.textContent =
+      translations[currentLanguage].formSuccess.replace("{name}", name);
+
+    reservationForm.reset();
+
+    if (dateInput) {
+      const today = new Date();
+      dateInput.min = new Date(
+        today.getTime() - today.getTimezoneOffset() * 60000
+      ).toISOString().split("T")[0];
+    }
+
+    formMessage.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest"
+    });
+  });
+}
+
+// Start in Russian
+applyLanguage("ru");
