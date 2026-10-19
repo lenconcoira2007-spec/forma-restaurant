@@ -43,3 +43,8 @@ This is a student project created for educational purposes. The restaurant is fi
 ## Project Status
 
 The website prototype is published. Testing and final project documentation will be completed as part of the educational project.
+## Version Control
+
+This project uses Git and GitHub for version control.
+Separate branches are used to organize changes and documentation.
+Changes are recorded in commits and can be shared through pull requests.
