@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMA — Restaurant & Bistro</title>
+  <meta name="description" content="Discover FORMA Restaurant & Bistro. Explore our menu and make a reservation.">
+</head>
+<body>
+  <header>
+    <h1>FORMA</h1>
+    <p>Restaurant & Bistro</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reservation">Reservation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>A place to enjoy good food</h2>
+      <p>Seasonal ingredients, thoughtful cooking, and a warm atmosphere.</p>
+    </section>
+
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <p>Discover a selection of dishes prepared with fresh ingredients.</p>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>Explore the atmosphere of FORMA Restaurant & Bistro.</p>
+    </section>
+
+    <section id="reservation">
+      <h2>Book a Table</h2>
+      <form>
+        <label for="name">Your name</label>
+        <input id="name" name="name" required>
+
+        <label for="date">Date</label>
+        <input id="date" name="date" type="date" required>
+
+        <label for="guests">Number of guests</label>
+        <input id="guests" name="guests" type="number" min="1" max="12" required>
+
+        <button type="submit">Request a reservation</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Opening hours: Monday–Sunday, 10:00–22:00</p>
+      <p>Email: hello@forma.example</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 FORMA Restaurant & Bistro</p>
+  </footer>
+</body>
+</html>
