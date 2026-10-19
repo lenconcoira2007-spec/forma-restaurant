@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
+:root {
+  --background: #f6f3ed;
+  --text: #242720;
+  --muted: #77796f;
+  --accent: #68745b;
+  --white: #ffffff;
+  --border: #deddd4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  padding: 24px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+main section {
+  padding: 80px 10%;
+  border-bottom: 1px solid var(--border);
+}
+
+#about {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background: #e9e7dc;
+}
+
+#about h2 {
+  max-width: 700px;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(42px, 7vw, 76px);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+section p {
+  max-width: 650px;
+  color: var(--muted);
+}
+
+#reservation form {
+  display: grid;
+  gap: 12px;
+  max-width: 480px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  font: inherit;
+}
+
+button {
+  padding: 15px 22px;
+  border: none;
+  background: var(--accent);
+  color: var(--white);
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #505b45;
+}
+
+footer {
+  padding: 28px 10%;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav {
+    gap: 12px 18px;
+  }
+
+  main section {
+    padding: 55px 7%;
+  }
+
+  #about {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+}
